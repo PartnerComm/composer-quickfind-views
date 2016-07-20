@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         bootstrap="tests/bootstrapWP.php"
+>
+
+    <testsuites>
+        <testsuite name="AllTests">
+            <directory>tests</directory>
+        </testsuite>
+        <testsuite name="Transformer">
+            <directory>Transformer/tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

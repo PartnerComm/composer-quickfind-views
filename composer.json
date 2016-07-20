@@ -1,0 +1,25 @@
+{
+  "name": "pcomm/quickfindviews",
+  "version": "master",
+  "description": "PComm Quickfind Views",
+  "dist": {
+    "type": "git",
+    "url": "https://partnercomm.git.beanstalkapp.com/composer-quickfind-views.git"
+  },
+  "authors": [
+    {
+      "name": "Partnercomm.net",
+      "email": "code@partnercomm.net"
+    }
+  ],
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PComm\\QuickFind\\Views\\": "src"
+    }
+  }
+}
