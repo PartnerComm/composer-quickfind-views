@@ -54,7 +54,7 @@ abstract class ViewOne implements ViewInterface
         }
 
         if(empty($this->template)) {
-            throw new \Exception('Error Finding Template : '.$template);
+            $this->template = __DIR__.'/Templates/default.php';
         }
     }
 
