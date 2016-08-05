@@ -96,10 +96,13 @@ class Base
             $rowHeadId = 0;
             $colHeadId = 0;
 
+            //TODO: default term order if 0 increment by 1
             if(count($grows) == 1) {
                 $table['rows'][$grows[0]->getTermOrder()] = $grows[0];
                 $rowHeadId = $grows[0]->getTermID();
             }
+
+            //TODO: default term order if 0 increment by 1
             if(count($gheads) == 1) {
                 $table['cols'][$gheads[0]->getTermOrder()] = $gheads[0];
                 $colHeadId = $gheads[0]->getTermID();
