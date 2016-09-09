@@ -20,7 +20,7 @@
                     <?php $pc_url = $post->getCustom('pc_url'); ?>
                     <?php if(!empty($pc_url[0])): ?>
                         <div class="contact_urls">
-                            <div class="handle_breaks"> <?php echo $contact->output_urls(unserialize($pc_url[0]), $post->getPostTitle()); ?></div>
+                            <div class="handle_breaks"> <?php echo $contact->output_urls(unserialize($pc_url[0]))); ?></div>
                         </div>
                     <?php endif; ?>
 

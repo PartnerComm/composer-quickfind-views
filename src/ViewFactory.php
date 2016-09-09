@@ -26,12 +26,6 @@ class ViewFactory
 
         return new \PComm\QuickFind\Views\DefaultView($node, $page_title, $this->alternateTemplateDir);
 
-//        if($node['isGroup']) {
-//            return new \PComm\QuickFind\Views\Group($node, $page_title);
-//        }
-//
-//        return new \PComm\QuickFind\Views\Text($node);
-
     }
 
     /**
