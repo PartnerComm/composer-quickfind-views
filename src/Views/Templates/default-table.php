@@ -6,7 +6,7 @@ $col_width = 'width="' . $col_percent . '%"';
 <div class="wrap_default_table">
     <div class="container">
         <div class="default_table_container qf_view col-12">
-            <p class=error">Error Loading: <?php echo $view; ?></p>
+            <p class="error">Required view: <strong><?php echo $view; ?></strong></p>
             <div class="article_content respondtable chart <?php echo $view; ?>">
                 <table class="table_rendered">
                     <thead>
