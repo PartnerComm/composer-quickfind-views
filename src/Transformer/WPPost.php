@@ -16,6 +16,11 @@ class WPPost implements PostInterface
      */
     protected $structure;
 
+    /**
+     * @var \PComm\Contacts\ContactMethodInterface[]
+     */
+    protected $methods = [];
+
     public function __construct(\WP_Post $post)
     {
         $this->original_post = $post;
@@ -98,6 +103,22 @@ class WPPost implements PostInterface
     {
         $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($this->original_post->ID), 'full' );
         return (!empty($thumbnail[0])) ? $thumbnail[0] : FALSE;
+    }
+
+    /**
+     * @param \PComm\Contacts\ContactMethodInterface $method
+     */
+    public function addMethod(\PComm\Contacts\ContactMethodInterface $method)
+    {
+        $this->methods[] = $method;
+    }
+
+    /**
+     * @return \PComm\Contacts\ContactMethodInterface[]
+     */
+    public function getMethods()
+    {
+        return $this->methods;
     }
 
 
