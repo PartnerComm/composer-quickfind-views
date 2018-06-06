@@ -43,7 +43,19 @@ class WPPost implements PostInterface
 
     public function getPostContent()
     {
+        if($this->isPrivate()) {
+            return "<span class='redacted'>redacted<span>";
+        }
+
         return str_replace(']]>',']]&gt>', apply_filters('the_content', $this->original_post->post_content));
+    }
+
+    public function isPrivate()
+    {
+        # TODO: Also make available for roles
+        if($this->getCustom('require-login') && !is_user_logged_in()) {
+            return true;
+        }
     }
 
     public function getPostSlug()
