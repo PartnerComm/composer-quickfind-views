@@ -7,6 +7,7 @@
                 <h2><?php echo $post->getPostTitle(); ?></h2>
                 <?php echo $post->getPostContent(); ?>
             </article>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>

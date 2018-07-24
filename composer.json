@@ -1,11 +1,7 @@
 {
   "name": "pcomm/quickfindviews",
-  "version": "master",
+  "version": "1.0.1",
   "description": "PComm Quickfind Views",
-  "dist": {
-    "type": "git",
-    "url": "https://partnercomm.git.beanstalkapp.com/composer-quickfind-views.git"
-  },
   "authors": [
     {
       "name": "Partnercomm.net",
