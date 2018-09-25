@@ -48,6 +48,15 @@ class WPPost implements PostInterface
         }
 
         return str_replace(']]>',']]&gt>', apply_filters('the_content', $this->original_post->post_content));
+	}
+	
+	public function getPostContentRaw()
+    {
+        if($this->isPrivate()) {
+            return "<span class='redacted'>redacted<span>";
+        }
+
+        return str_replace(']]>',']]&gt>',  $this->original_post->post_content);
     }
 
     public function isPrivate()
