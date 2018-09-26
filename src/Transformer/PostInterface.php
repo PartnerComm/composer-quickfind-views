@@ -8,6 +8,7 @@ interface PostInterface
     public function getPostTitle();
     public function getPostExcerpt();
     public function getPostContent();
+    public function getPostContentRaw();
     public function getPostSlug();
     public function getMenuOrder();
     public function getPostType();
