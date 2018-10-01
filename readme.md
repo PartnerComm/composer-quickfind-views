@@ -8,5 +8,8 @@ We need to get a better underestanding of how we can possibly / if it's desirabl
 Let's work on better documenting this plugin and how it interacts with the QF plugin proper, and look into whether it makes sense to merge the two together.
 
 # Release Notes
+- 1.0.2 (2018-10-01)
+	- Rename `Testimonial` view to `TestimonialGroup` to allow for single testimonial view in qf_templates
+
 - 1.0.2 (2018-09-25)
 	- Add `getPostContentRaw` method to get unfiltered post content
